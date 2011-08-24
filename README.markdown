@@ -26,4 +26,8 @@ You can specify a output file name if you don't want it to inherit the original 
     
 Will generate a file called super_doc.html in the local folder
 
+# Todo
 
+Eventually I'll add support for custom templates for the html, currently a really basic white template is used.  I have the hooks in place for the cmd-line arguments to almost work.
+
+In addition, I'd also like to add support to do an entire directory of markdown and create a directory of .html output
