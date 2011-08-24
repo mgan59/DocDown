@@ -1,0 +1,30 @@
+{
+  "name":         "docdown",
+  "description":  "A simple markdown to html command-line conversion tool",
+  "keywords":     ["markdown", "html", "document", "command-line"],
+  "author":       "Morgan Craft",
+  "version":      "0.0.1",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        "http://github.com/mgan59/docdown/license.markdown"
+  }],
+  "engines":      {
+    "node":       ">=0.4.8"
+  },
+  "directories" : {
+    "lib" : "./lib/docdown"
+  },
+  "main" : "./lib/docdown",
+  "bin":          {
+    "coffee":     "./bin/docdown"
+  },
+  "homepage":     "http://morgancraft.com",
+  "repository":   {
+    "type": "git",
+    "url": "git://github.com/mgan59/docdown.git"
+  },
+  "devDependencies": {
+    "markdown-js":  "0.0.3",
+    "optimist":      "0.2.6"
+  }
+}
