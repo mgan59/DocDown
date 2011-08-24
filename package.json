@@ -26,7 +26,7 @@
   "dependencies": {
     "markdown-js":  "0.0.3",
     "optimist":      "0.2.6"
-  }
+  },
   "devDependencies": {
     "markdown-js":  "0.0.3",
     "optimist":      "0.2.6"
