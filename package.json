@@ -16,7 +16,7 @@
   },
   "main" : "./lib/docdown",
   "bin":          {
-    "coffee":     "./bin/docdown"
+    "docdown":     "./bin/docdown"
   },
   "homepage":     "http://morgancraft.com",
   "repository":   {
