@@ -3,7 +3,7 @@
   "description":  "A simple markdown to html command-line conversion tool",
   "keywords":     ["markdown", "html", "document", "command-line"],
   "author":       "Morgan Craft",
-  "version":      "0.0.2",
+  "version":      "0.0.3",
   "licenses":     [{
     "type":       "MIT",
     "url":        "http://github.com/mgan59/docdown/license.markdown"
