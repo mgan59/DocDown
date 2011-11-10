@@ -1,3 +1,8 @@
+###
+DocDown
+A command-line utility to convert markdown files to HTML
+###
+
 fs = require 'fs'
 path = require 'path';
 markdownParser = require( '../node_modules/markdown-js/lib/markdown').markdown;
