@@ -33,9 +33,9 @@ The following variables can be used when calling the tool as the following
 
 <table>
 	<thead>
-		<td> **Variable** </td>
-		<td> **Description** </td>
-		<td> **Default value** </td>
+		<td> <strong>Variable</strong> </td>
+		<td> <strong>Description</strong> </td>
+		<td> <strong>Default value</strong> </td>
 	</thead>
 	<tr>
 		<td>title</td>
@@ -44,8 +44,8 @@ The following variables can be used when calling the tool as the following
 	</tr>
 	<tr>
 		<td>author</td>
-		<td>Value in the meta tag **author** in the head of the document</td>
-		<td> _None_ </td>
+		<td>Value in the meta tag <strong>author</strong> in the head of the document</td>
+		<td> <em>None</em> </td>
 	</tr>
 </table>
 
