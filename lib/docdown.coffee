@@ -42,15 +42,24 @@ exports.run = () ->
       # and replace with html
       file_name_parts = markdownInput.split '.'
       outputPath = "#{file_name_parts[0]}.html"    
+    
+    htmlReplacement = {}
 
-    htmlTitle = '';
-
+    htmlReplacement['__title__'] = ''
     #Handle title used in the html template
-    if argv.title 
-        htmlTitle = argv.title
+    if argv.title
+      htmlReplacement['__title__'] = argv.title
     else
       #If no title param specified, use the default one
-      htmlTitle = 'DocDown Generated File';
+      htmlReplacement['__title__'] = 'DocDown Generated File';
+
+    #Handle author used in the html template
+    htmlReplacement['__author__'] = ''
+    if argv.author
+        htmlReplacement['__author__'] = argv.author
+    else
+      #If no author param specified, none is used.
+      htmlReplacement['__author__'] = '';
 
     #sync call to markdown file
     sourceMarkdownFile = fs.readFileSync markdownInput, 'utf-8'
@@ -64,10 +73,13 @@ exports.run = () ->
         if err
           throw err
 
-        replaceText = markdownParser sourceMarkdownFile
+        htmlReplacement['__markdown__'] = markdownParser sourceMarkdownFile
         #replace text
-        newDoc = buff.replace '__markdown__', replaceText
-        newDoc = newDoc.replace '__title__', htmlTitle
+        newDoc = buff
+
+        for key,value of htmlReplacement
+          #replacing all variables
+          newDoc = newDoc.replace key,value
 
         fs.writeFile outputPath, newDoc, (err) ->
             if err
