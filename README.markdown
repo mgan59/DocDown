@@ -26,6 +26,29 @@ You can specify a output file name if you don't want it to inherit the original 
     
 Will generate a file called super_doc.html in the local folder
 
+# Variables
+The following variables can be used when calling the tool as the following
+
+	docdown --markdown my_doc.markdown --title "New project specs"
+
+<table>
+	<thead>
+		<td> <strong>Variable</strong> </td>
+		<td> <strong>Description</strong> </td>
+		<td> <strong>Default value</strong> </td>
+	</thead>
+	<tr>
+		<td>title</td>
+		<td>Title in the generated HTML</td>
+		<td>DocDown Generated File</td>
+	</tr>
+	<tr>
+		<td>author</td>
+		<td>Value in the meta tag <strong>author</strong> in the head of the document</td>
+		<td> <em>None</em> </td>
+	</tr>
+</table>
+
 # Todo
 
 Eventually I'll add support for custom templates for the html, currently a really basic white template is used.  I have the hooks in place for the cmd-line arguments to almost work.
