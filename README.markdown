@@ -54,3 +54,7 @@ The following variables can be used when calling the tool as the following
 Eventually I'll add support for custom templates for the html, currently a really basic white template is used.  I have the hooks in place for the cmd-line arguments to almost work.
 
 In addition, I'd also like to add support to do an entire directory of markdown and create a directory of .html output
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mgan59/docdown/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
